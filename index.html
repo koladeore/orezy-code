@@ -9,7 +9,7 @@
 	<div class="background">
 		<!-- fullscreen -->
 		<div class="fullscreen">
-			<video src="code.mov" autoplay="true" 
+			<video width='99.8%' src="code.mov" autoplay="true" 
 			loop="true"></video>
 		</div>		
 		<!-- dove -->
@@ -86,6 +86,7 @@
 	<script type="text/javascript">
 
 		$(document).ready(function(){
+			$('.fullscreen').hide();
 			$('a').click(function(){
 					//alert("i am click");
 					//var selected = $(this);
@@ -121,8 +122,8 @@
 				$contactus.fadeOut();
 				$new.fadeOut();
 				$('.fullscreen').hide();
-
-
+				$('.background').css('background-image','url(images/code.jpg)');
+				$('.dove').css('display','block');
 			});
 			$b.click(function(){
 				$aboutus.fadeIn();
@@ -131,6 +132,8 @@
 				$contactus.fadeOut();
 				$new.fadeOut();
 				$('.fullscreen').hide(); 
+				$('.background').css('background-image','url(images/code.jpg)');
+				$('.dove').css('display','block');
 			});
 			$c.click(function(){
 				$gallery.fadeIn ();
@@ -139,6 +142,8 @@
 				$contactus.fadeOut();
 				$new.fadeOut();
 				$('.fullscreen').hide(); 
+				$('.background').css('background-image','url(images/code.jpg)');
+				$('.dove').css('display','block');
 			});
 			$d.click(function(){
 				$contactus.fadeIn();
@@ -147,6 +152,8 @@
 				$aboutus.fadeOut();
 				$new.fadeOut();
 				$('.fullscreen').hide();
+				$('.background').css('background-image','url(images/code.jpg)');
+				$('.dove').css('display','block');
 
 			});
 			$e.click(function(){
@@ -156,6 +163,8 @@
 				$aboutus.fadeOut();
 				$contactus.fadeOut();
 				$('.fullscreen').show();
+				$('.background').css('background-image','none');
+				$('.dove').css('display','none');
 			});
 
 		});
