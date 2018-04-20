@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>K.com</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<div class="background">
+		<!-- fullscreen -->
+		<div class="fullscreen">
+			<video src="code.mov" autoplay="true" 
+			loop="true"></video>
+		</div>		
+		<!-- dove -->
+		<div class="dove">
+			<img src="images/pix.jpg"/>
+		</div>
+		<div class="son">
+			<a class="a" active" href="#">HOME</a>
+			<a class="b" href="#">ABOUT ME</a>
+			<a class="c" href="#">GALLERY</a>
+			<a class="d" href="#">CONTACT ME</a>
+			<a class="e" href="#">SERVICES</a>
+		</div>
+	</div>
+	
+	<div class="content">
+		<!-- home -->
+		<div class="home">
+			<h1>HI  am emmanuel ore the young</h1>
+			<h3>PROGRAMMER</h3>
+		</div>
+		<!-- about us -->
+		<div class= "aboutus">
+			<div class="pix">
+				<img src="images/pix 2.jpg"/>
+			</div>
+
+			<p><b>Myself,</b><br>
+				My name is kolade ore emmanuel a young<b>programmer</b>.
+				<h4><br><b>Am base in covenant university ota,am a fan of basketball, football.</b><br>
+					<b>I like solving problems and create new things.</b>
+				</h4> 
+			</p>				
+		</div>
+		<!-- gallery -->
+		<div class="gallery">
+			<h1>Hello i am Gallery</h1>
+			<div class="image">
+				<img src="images/pix 2.jpg"/>
+			</div>
+			<div class="image">
+				<img src="images/pix 3.jpg"/>
+			</div>
+			<div class="image">
+				<img src="images/pix 4.jpg"/>
+			</div>
+			<div class="image">
+				<img src="images/pix 5.jpg"/>
+			</div>
+		</div>
+		<!-- contact us -->
+		<div class="contactus">
+			<div class="contactform">
+				<form action="index.html" method="post">
+					<input type="text" name="" class="inputtext" value="First Name">
+					<input type="text" name="" class="inputtext" value="Last Name">
+					<input type="text" name="" class="inputtext" value="Your Email">
+					<textarea cols="4" rows="6" class="inputmessage">Your Messages...!!!</textarea>
+					<input type="button" name="" class="submitbutton" value="submit">
+				</form>
+			</div>
+				<div class="contactform2">
+					<div class="bag">
+						<p>YOU JUST LOGIN IN</p>
+					</div>
+				</div>	
+		</div>	
+		<!-- services -->
+		<div class="new">
+			<p><b>I CAN HELP TO BUILD ANY TYPE OF WEBSITE.
+			AM A PROFFESONAL ON WEB DEVELOPMENT</b></p>
+		</div>			
+	</div>			
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+			$('a').click(function(){
+					//alert("i am click");
+					//var selected = $(this);
+					$('.a').removeClass('active');
+					$('.contactform').show(100);
+					$('.contactform2').hide(100);	
+
+				});
+
+			$('.submitbutton').click(function(){
+				$('.contactform').hide(100);
+				$('.contactform2').show(100);
+
+
+
+			});
+
+			var $a = $('.a'),
+			$b = $('.b'),
+			$c = $('.c'),
+			$d = $('.d'),
+			$e = $('.e'), 
+			$home = $('.home'),
+			$aboutus = $('.aboutus')
+			$gallery = $('.gallery'),
+			$contactus = $('.contactus'),
+			$new = $('.new'),
+
+			$a.click(function(){
+				$home.fadeIn();
+				$aboutus.fadeOut();
+				$gallery.fadeOut();
+				$contactus.fadeOut();
+				$new.fadeOut();
+				$('.fullscreen').hide();
+
+
+			});
+			$b.click(function(){
+				$aboutus.fadeIn();
+				$home.fadeOut();
+				$gallery.fadeOut();
+				$contactus.fadeOut();
+				$new.fadeOut();
+				$('.fullscreen').hide(); 
+			});
+			$c.click(function(){
+				$gallery.fadeIn ();
+				$home.fadeOut()
+				$aboutus.fadeOut();
+				$contactus.fadeOut();
+				$new.fadeOut();
+				$('.fullscreen').hide(); 
+			});
+			$d.click(function(){
+				$contactus.fadeIn();
+				$home.fadeOut();
+				$gallery.fadeOut();
+				$aboutus.fadeOut();
+				$new.fadeOut();
+				$('.fullscreen').hide();
+
+			});
+			$e.click(function(){
+				$new.fadeIn();
+				$home.fadeOut();
+				$gallery.fadeOut();
+				$aboutus.fadeOut();
+				$contactus.fadeOut();
+				$('.fullscreen').show();
+			});
+
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,256 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html, body{
+	width: 100%;
+	height: 100%;
+	font-size: 14px;
+	font-weight: normal; 
+}
+.background{
+	width: 100%;
+	height: 100%;
+	background-image: url(images/code.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	overflow-y: auto; 
+}
+.background .dove{
+    width: 60%;
+	margin: 5%;
+	float: left;
+	top: 50px;
+}
+.dove img{
+	width: 50%;
+	transition: all ease 0.5s;
+	-webkit-transition: scale(1);
+	transform: scale(1);
+	-webkit-transform: scale(1);
+    border-radius: 50%;
+}
+.son{
+	width: 350px; 
+	height: auto;
+	position: absolute;
+	top: 20%;
+	left: 0;
+}
+.son a{
+	text-decoration: none;
+	font-size: 28px;
+	font-family: normal;
+	font-weight: bold;
+	height: 90px;
+	display: inline-block;
+	margin: 5px 0;
+	float: left;
+	background-color: black;
+	color: white;
+	line-height: 90px;
+	text-align: center;
+	transition: 300ms; 
+}
+
+a.active, .son a:hover{
+	background-color: orange;
+	color: black;
+	width: 100%;
+}
+.a{
+	width: 95%;
+}
+.b{
+	width: 90%;
+}
+.c{
+	width: 85%;
+}
+.d{
+	width: 80%;
+}
+.e{
+	width: 85%;
+}
+.content{
+	position: absolute;
+	width: 900px;
+	min-height: 500px;
+	/*background-color: red;*/
+	right: 0;
+	top: 10%; 
+}
+.home{
+	position: absolute;
+	right: 0;
+	top: -50px;
+	font-family: normal;
+	text-transform: uppercase;
+}
+.home h1{
+	font-size: 60px;
+	padding-right: 120px;
+	border-bottom: 2px solid black;
+	color: orange;
+}
+.home h3{
+	font-size: 30px;
+	padding: 5px 0;
+	opacity: 0.7;
+	color: blue;
+
+
+}
+.aboutus{
+	position: absolute;
+	right: 0;
+	top:  10px;
+	color: white;
+	font-family: normal;
+	padding: 0 60px;
+	display: none;
+	color: black;
+
+}
+.aboutus p{
+	font-size:30px;
+	line-height:30px;
+	margin-bottom: 1px;
+}
+.aboutus h4{
+	font-size: 28px;
+	padding-right: 30px;
+	border-bottom: 3px solid purple;
+	color: orange;
+	border-width: 5px;
+	border-radius: 20px;
+}
+.aboutus .pix{
+    width: 30%;
+	margin: 1%;
+	float: left;
+	top: 50px;
+}
+.pix img{
+	width: 80%;
+	transition: all ease 0.5s;
+	-webkit-transition: scale(1);
+	transform: scale(1);
+	-webkit-transform: scale(1);
+    border-radius: 100%;
+}
+.pix img:hover{
+	transform: scale(1.2);
+	-webkit-transform: scale(1.2)
+
+}
+.gallery{
+	position: absolute;
+	right: 0;
+	top:  20px;
+	color: orange;
+	padding: 0 60px;
+	display: none;
+}
+.gallery .image{
+	width: 30%;
+	margin: 2%;
+	float: left; 
+}
+.image img{
+	width:65%;
+	transition: all ease 0.5s;
+	-webkit-transition: scale(1);
+	transform: scale(1);
+	-webkit-transform: scale(1);
+
+}
+.image img:hover{
+	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+}
+.contactus{
+	position: absolute;
+	right: 0;
+	color: white;
+	padding: 0 60px;
+	display: none;
+}
+.inputtext{
+	width: 55%;
+	height: 65%;
+	border: 3px solid black;
+	color: white;
+	background-color: rgba(0,0,0,0.7);
+	font-size: 20px;
+	padding: 30px 10px;
+	float: left;
+	margin-bottom: 15px;  
+}
+.inputmessage{
+	width: 55%;
+	height: 65%;
+	border: 3px solid white;
+	color: white;
+	background-color: rgba(0,0,0,0.7);
+	font-size: 20px;
+	padding: 0px 10px;
+	float: left;
+}
+.submitbutton{
+	width: 160px;
+	height: 65%;
+	background-color: red;
+	color: black;
+	font-size: 28px;
+	border: none;
+	font-weight: bold;
+	float: left;
+	clear: both;
+	margin-top: 25px; 
+}
+.bag {
+	width: 55%;
+	height: 65%;
+}
+.bag p{
+	font-size: 80px;
+	color: rgba(225,225,225,.1);
+	background-image: url(color1.jpg);
+	background-repeat: repeat-x;
+	-webkit-background-clip: text;
+	animation: animate 15s linear infinite;
+ 
+}
+@keyframes animate{
+	0%{
+		background-position: left 0px top 10px;
+	}
+	40%{
+		background-position: left 800px top 10px;
+	}
+}
+.new{
+	position: absolute;
+	right: 0;
+	top: -80px;
+	font-family: normal;
+	padding: 0 60px;
+	display: none;
+    background-position: left top;
+    background-repeat: no-repeat;
+    padding: 15px;
+	
+}
+.new p{
+	font-size: 45px;
+	padding-right: 100px;
+	border-bottom: 1px solid black;
+	color: rgb(20,20,80,1.5);
+}
+
+
+
+	
